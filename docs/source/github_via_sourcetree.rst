@@ -63,8 +63,8 @@ In the main sourcetree window, go to settings
 
 Then go to the 'accounts' tab, and click 'add'
 
-.. image:: images/github_via_sourcetree/open_sourcetree_settings.png
-   :alt: open_sourcetree_settings
+.. image:: images/github_via_sourcetree/sourcetree_accounts.png
+   :alt: sourcetree_accounts
    :width: 80%
 
 In this screen, set the host github, auth type to Personal Access Token, username your github username and protocol to HTTPS. In the personal access token field, paste the token you generated before.

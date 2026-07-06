@@ -74,7 +74,7 @@ The repository name should be descriptive, and in most cases will be the same as
 It is usually preferred to initialize with a readme, and a gitignore file for the language the repos is (mostly) in. The license in most cases should be GPL-3.0, but might depend on the project.
 
 .. _create_team:
-Step 2: Create a new team
+Step 3: Create a new team
 ------------------
 
 If the user is going to work on a new project, we also need to create a team for that project. This is done by creating a new team in the organization.
@@ -114,7 +114,7 @@ By default, the team page will open. You can however also just go there from the
 
 
 .. _add_repository_to_team:
-Step 3: Add repository to Team
+Step 4: Add repository to Team
 ------------------
 
 Now we need to link the repository to the team, so the team can write to the repository.
@@ -167,7 +167,7 @@ Setting this to write allows the team to work in the repository.
 
 
 .. _add_user_to_team:
-Step 4: Add user to Team
+Step 5: Add user to Team
 ------------------
 
 With teams and repositories in place, we need to add users to teams.

@@ -209,5 +209,4 @@ Enter the correct username and click "Invite":
    index
    prerequisites
    overview
-   teams_and_repos_for_admins
    gitlab_linking_for_admins

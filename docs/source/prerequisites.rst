@@ -57,7 +57,6 @@ After you have created the required accounts, you can move on to the :doc:`overv
    :caption: Contents
 
    index
-   prerequisites
    overview
    teams_and_repos_for_admins
    gitlab_linking_for_admins

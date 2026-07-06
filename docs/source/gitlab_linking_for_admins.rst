@@ -9,4 +9,3 @@ Linking Github to Gitlab for admins
    prerequisites
    overview
    teams_and_repos_for_admins
-   gitlab_linking_for_admins

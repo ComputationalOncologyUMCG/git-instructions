@@ -6,3 +6,12 @@ This instructions web resource will guide you through proper usage of git in the
 Check out the :doc:`prerequisites` section for making sure the you have the required accounts, then move on to the overview :doc:`overview`.
 
 
+.. toctree::
+   :maxdepth: 2
+   :caption: Contents
+
+   prerequisites
+   overview
+   teams_and_repos_for_admins
+   gitlab_linking_for_admins
+

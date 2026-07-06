@@ -18,25 +18,29 @@ You need to do this for each new machine that you work on, as well as when a PAT
 
 For generating a PAT, first go to your profile by clicking on it in the top-right, then click on Settings
 
-.. image:: images/teams_and_repos_for_admins/go_to_profile_settings.png
+.. image:: images/github_via_sourcetree/go_to_profile_settings.png
    :alt: go_to_profile_settings
+   :width: 80%
+
+.. image:: images/github_via_sourcetree/to_organization_dashboard.png
+   :alt: to_organization_dashboard
    :width: 80%
 
 Then, scroll all the way down on the left, to 'developer settings'
 
-.. image:: images/teams_and_repos_for_admins/to_developer_settings.png
+.. image:: images/github_via_sourcetree/to_developer_settings.png
    :alt: to_developer_settings
    :width: 80%
 
 Next, go to 'personal access tokens' and 'Tokens (classic)'
 
-.. image:: images/teams_and_repos_for_admins/to_personal_access_tokens.png
+.. image:: images/github_via_sourcetree/to_personal_access_tokens.png
    :alt: to_personal_access_tokens
    :width: 80%
 
 Generate a new classic token
 
-.. image:: images/teams_and_repos_for_admins/generate_classic_token.png
+.. image:: images/github_via_sourcetree/generate_classic_token.png
    :alt: to_personal_access_tokens
    :width: 80%
 
@@ -44,33 +48,33 @@ Enter the information for the token. The token will be personal, so naming is up
 The expiration also depends on you, but three months is recommended, as this is a good balance of security while not having to create a new one too often.
 The minimal permissions you need to give, is the 'repo' one. Finally click 'Generate token' at the bottom.
 
-.. image:: images/teams_and_repos_for_admins/setup_classic_token.png
+.. image:: images/github_via_sourcetree/setup_classic_token.png
    :alt: setup_classic_token
    :width: 80%
 
 You will then be shown the new token (don't worry, this example has already been deleted). Github however, will only show the token now, so do not close this tab until you have copied over the PAT to SourceTree.
 
-.. image:: images/teams_and_repos_for_admins/token_success.png
+.. image:: images/github_via_sourcetree/token_success.png
    :alt: token_success
    :width: 80%
 
 Now, open Sourcetree. If this is the first time opening it, go through the initial setup and skip whatever logins it asks for.
 In the main sourcetree window, go to settings
 
-.. image:: images/teams_and_repos_for_admins/open_sourcetree_settings.png
+.. image:: images/github_via_sourcetree/open_sourcetree_settings.png
    :alt: open_sourcetree_settings
    :width: 80%
 
 Then go to the 'accounts' tab, and click 'add'
 
-.. image:: images/teams_and_repos_for_admins/open_sourcetree_settings.png
+.. image:: images/github_via_sourcetree/open_sourcetree_settings.png
    :alt: open_sourcetree_settings
    :width: 80%
 
 In this screen, set the host github, auth type to Personal Access Token, username your github username and protocol to HTTPS. In the personal access token field, paste the token you generated before.
 Then click save.
 
-.. image:: images/teams_and_repos_for_admins/sourcetree_account_setup.png
+.. image:: images/github_via_sourcetree/sourcetree_account_setup.png
    :alt: open_sourcetree_settings
    :width: 80%
 

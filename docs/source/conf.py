@@ -1,5 +1,5 @@
-project = "My Project"
-author = "Your Name"
+project = "Git Guide for Computational Oncology group"
+author = "Roy Oelen"
 
 extensions = [
     "sphinx.ext.autodoc",

@@ -22,10 +22,6 @@ For generating a PAT, first go to your profile by clicking on it in the top-righ
    :alt: go_to_profile_settings
    :width: 80%
 
-.. image:: images/github_via_sourcetree/to_organization_dashboard.png
-   :alt: to_organization_dashboard
-   :width: 80%
-
 Then, scroll all the way down on the left, to 'developer settings'
 
 .. image:: images/github_via_sourcetree/to_developer_settings.png
@@ -140,7 +136,7 @@ For example, this is a repository where there is the main to the left, and branc
 We can immediatly make our own branch in the same dropdown menu, by starting to type and then clicking 'Create branch [branchname]'. Branch names should be descriptive. Best is to start with your username, so your branch can be identified, followed by a slash and what you plan to do with the branch. If you are adding specific functionality, put that in the name. If you are doing some 'general' development, as is normal when you are starting out, you can name it something like 'username/general_development'
 
 .. image:: images/github_via_sourcetree/repo_create_branch.png
-   :alt: branching_example
+   :alt: repo_create_branch
    :width: 80%
 
 After creating the branch, you will land on the page showing the state of that branch (which for now is the same as main/master)
@@ -149,4 +145,121 @@ After creating the branch, you will land on the page showing the state of that b
 .. _work_on_branch_sourcetree:
 Working on branch in Sourcetree
 -----------------------------------------
+
+Now we are going to move onto working in SourceTree. But first we need the URL of the repository. On the repository page, click code, then on the copy icon next to the URL text:
+
+.. image:: images/github_via_sourcetree/copy_repo_url.png
+   :alt: copy_repo_url
+   :width: 80%
+
+Now open the Sourcetree main window, then New, then clone via URL 
+
+.. image:: images/github_via_sourcetree/clone_repo_open.png
+   :alt: clone_repo_open
+   :width: 80%
+
+Enter the URL. When you click one of the other fields, defaults will be filled in. You can change the name and path if you wish.
+
+.. image:: images/github_via_sourcetree/enter_repo_url.png
+   :alt: enter_repo_url
+   :width: 80%
+
+The repository overview should open now, but you can also open it by double-clicking the repository in the sourcetree main window.
+
+Now switch to the branch you created, by double-clicking it in the left window under 'remotes'
+
+.. image:: images/github_via_sourcetree/repo_opened.png
+   :alt: repo_opened
+   :width: 80%
+
+Select checkout
+
+.. image:: images/github_via_sourcetree/checkout_branch.png
+   :alt: checkout_branch
+   :width: 80%
+
+Now your local files should reflect the status of your remote branch. You can start creating and editing the files. 
+
+Whenever you want to store your changes, you can open up soucetree again. Then select 'commit'.
+
+.. image:: images/github_via_sourcetree/commit_button.png
+   :alt: commit_button
+   :width: 80%
+
+You will be shown a possible list of files that you can commit with changes. In most cases you will want to add all changes, but if there are for example some cache files generated, you might not want to commit those.
+
+In any case, add a descriptive message that encapsulates the work that you did. Also check the box on the button on the bottom, as that will save us from having to click 'push' manually.
+
+.. image:: images/github_via_sourcetree/commit_and_push.png
+   :alt: commit_button
+   :width: 80%
+
+If you would go back to the github page for this repository, then would specifically check your branch, you would see the changes you just made.
+
+Should you update your branch from a different machine, or via github web itself (not recommended), you can also view them locally by doing a 'fetch'
+
+.. image:: images/github_via_sourcetree/do_fetch.png
+   :alt: do_fetch
+   :width: 80%
+
+You can then add those changes to your machine by doing a subsequent 'pull'
+
+.. image:: images/github_via_sourcetree/do_pull.png
+   :alt: do_pull
+   :width: 80%
+
+.. _merging_branch:
+Merging your branch with Main/Master
+------------------------------------
+
+When you feel like your branch has finished the feature you set out, or you feel that enough has been added, you can merge your work onto the Main/Master branch.
+
+Go to the github page, and click 'branches'
+
+.. image:: images/github_via_sourcetree/click_branches.png
+   :alt: do_pull
+   :width: 80%
+
+Select your branch, click the dot menu, and select 'New pull request'
+
+.. image:: images/github_via_sourcetree/click_new_pull_request.png
+   :alt: click_new_pull_request
+   :width: 80%
+
+Title your pull request, and describe what it is adding. If you want, you can add a reviewer to review your changes. Then click 'Create pull request'
+
+.. image:: images/github_via_sourcetree/describe_pull_request.png
+   :alt: describe_pull_request
+   :width: 80%
+
+This will open the pull requests page. You can immediatly merge the pull request, or wait for someone to review it for you first.
+
+.. image:: images/github_via_sourcetree/view_pull_request.png
+   :alt: view_pull_request
+   :width: 80%
+
+You can now merge it yourself, or wait for reviews first. 
+
+If you want to return to the pull requests later, you can see all of them via the 'pull requests' tab
+
+.. image:: images/github_via_sourcetree/view_all_prs.png
+   :alt: view_all_prs
+   :width: 80%
+
+
+.. _cleaning_up:
+Cleaning up after a merge
+-------------------------
+
+If you feel like the branch has served its purpose after a merge, you can remove. First however, pull changes in sourcetree, then switch back to the remote main branch by selecting it on the left
+
+.. image:: images/github_via_sourcetree/switch_to_main.png
+   :alt: switch_to_main
+   :width: 80%
+
+Then go back to the github webpage, and remove the branch
+
+.. image:: images/github_via_sourcetree/remove_branch.png
+   :alt: switch_to_main
+   :width: 80%
 

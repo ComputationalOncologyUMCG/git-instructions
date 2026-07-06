@@ -1,22 +1,15 @@
-Welcome to Lumache's documentation!
-===================================
+Welcome to the git usage documentation of the Computational Oncology group
+==========================================================================
 
-**Lumache** (/lu'make/) is a Python library for cooks and food lovers
-that creates recipes mixing random ingredients.
-It pulls data from the `Open Food Facts database <https://world.openfoodfacts.org/>`_
-and offers a *simple* and *intuitive* API.
+This instructions web resource will guide you through proper usage of git in the Computational Oncology group. It contains managing projects on github, and optionally the usage of planning on gitlab and automated builds for Docker.
 
-Check out the :doc:`usage` section for further information, including
-how to :ref:`installation` the project.
+Check out the :doc:`prerequisites` section for making sure the you have the required accounts, then move on to the overview :doc:`overview`.
 
-.. note::
-
-   This project is under active development.
 
 Contents
 --------
 
 .. toctree::
 
-   usage
-   api
+   prerequisites
+   overview

@@ -52,3 +52,12 @@ Next step
 After you have created the required accounts, you can move on to the :doc:`overview` section, which will guide you through the basic usage of git in our group.
 
 
+.. toctree::
+   :maxdepth: 2
+   :caption: Contents
+
+   index
+   prerequisites
+   overview
+   teams_and_repos_for_admins
+   gitlab_linking_for_admins

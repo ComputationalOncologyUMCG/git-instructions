@@ -202,11 +202,3 @@ Enter the correct username and click "Invite":
    :alt: invite_team_member
    :width: 80%
 
-.. toctree::
-   :maxdepth: 2
-   :caption: Contents
-
-   index
-   prerequisites
-   overview
-   gitlab_linking_for_admins

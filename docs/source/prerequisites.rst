@@ -8,7 +8,7 @@ Github account
 ------------------
 
 To do anything, you need a github account. If you do not have one yet, please create one at `github.com <https://github.com/>`_.
-It is recommended that you use an email address that you are going to keep (not necessarily UMCG), so that you can still access and showcase your code even after your contract at the UMCGmay expire
+It is recommended that you use an email address that you are going to keep (not necessarily UMCG), so that you can still access and showcase your code even after your contract at the UMCG may expire
 
 
 .. _github_group:
@@ -52,10 +52,3 @@ Next step
 After you have created the required accounts, you can move on to the :doc:`overview` section, which will guide you through the basic usage of git in our group.
 
 
-Contents
---------
-
-.. toctree::
-
-   prerequisites
-   overview

@@ -6,10 +6,3 @@ This instructions web resource will guide you through proper usage of git in the
 Check out the :doc:`prerequisites` section for making sure the you have the required accounts, then move on to the overview :doc:`overview`.
 
 
-Contents
---------
-
-.. toctree::
-
-   prerequisites
-   overview

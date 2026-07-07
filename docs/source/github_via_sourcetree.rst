@@ -144,7 +144,7 @@ After creating the branch, you will land on the page showing the state of that b
 
 .. _work_on_branch_sourcetree:
 Working on branch in Sourcetree
------------------------------------------
+-------------------------------
 
 Now we are going to move onto working in SourceTree. But first we need the URL of the repository. On the repository page, click code, then on the copy icon next to the URL text:
 
@@ -180,7 +180,7 @@ Select checkout
 
 Now your local files should reflect the status of your remote branch. You can start creating and editing the files. 
 
-Whenever you want to store your changes, you can open up soucetree again. Then select 'commit'.
+Whenever you want to store your changes, you can open up soucetree again, and select the repository if you closed the window before. Then select 'commit'.
 
 .. image:: images/github_via_sourcetree/commit_button.png
    :alt: commit_button
@@ -251,13 +251,13 @@ If you want to return to the pull requests later, you can see all of them via th
 Cleaning up after a merge
 -------------------------
 
-If you feel like the branch has served its purpose after a merge, you can remove. First however, pull changes in sourcetree, then switch back to the remote main branch by selecting it on the left
+If you feel like the branch has served its purpose after a merge, you can remove. First however, fetch pull changes in sourcetree, then switch back to the remote main branch by selecting it on the left
 
 .. image:: images/github_via_sourcetree/switch_to_main.png
    :alt: switch_to_main
    :width: 80%
 
-Then go back to the github webpage, and remove the branch
+Then go back to the github webpage, make extra sure your changes have actually been merged into the main/master and remove the branch you created
 
 .. image:: images/github_via_sourcetree/remove_branch.png
    :alt: switch_to_main

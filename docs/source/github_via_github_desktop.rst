@@ -11,7 +11,7 @@ If you have chosen to use Github Desktop, you need to first install it. You can 
 
 .. _linking_to_github:
 Linking to GitHub account
---------------------------------
+-------------------------
 
 To use github for pushing to a repository, as well as pulling and cloning from a private repository, you need to log into your GitHub account.
 Fortunately, this is fairly easy using GitHub Desktop. Upon first boot it will immedialy ask you to log in. Select the left option 'sign into github.com':

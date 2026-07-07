@@ -136,7 +136,7 @@ On the bottom left, enter a short and longer message describing the changes that
 
 This has only committed the changes locally. Next we need to push these changes to GitHub. You can do this by either clicking the blue 'Push origin' button, or clicking the 'Push origin' box at the top.
 
-.. image:: images/github_via_github_desktop/push.png
+.. image:: images/github_via_github_desktop/push_origin.png
    :alt: push
    :width: 80%
 

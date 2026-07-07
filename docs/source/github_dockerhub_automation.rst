@@ -11,8 +11,8 @@ First, we need a Docker Hub account that will house your images. You can access 
 If you want the image to be hosted on `https://hub.docker.com/u/computationaloncologyumcg <https://hub.docker.com/u/computationaloncologyumcg/>`_, one of the admins needs to do this first two steps.
 
 There are two things you need from docker hub, to be able to automate the build and upload
-- a username to use for uploads
-- a Personal Access Token (PAT) to use for uploads
+#. a username to use for uploads
+#. a Personal Access Token (PAT) to use for uploads
 
 When you go to docker hub, you can click your profile on the top right, to see what your account name is:
 

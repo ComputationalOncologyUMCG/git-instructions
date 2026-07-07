@@ -90,7 +90,7 @@ Then click 'Add secret'
 
 You then are returned to the secrets overview, and see the new secret you added to the Repository secrets.
 
-.. image:: images/github_dockerhub_automation/see_username_secret.png
+.. image:: images/github_dockerhub_automation/see_username_result.png
    :alt: see_username_secret
    :width: 80%
 

@@ -106,8 +106,8 @@ If you left that window open, you should be able to copy and paste both of these
 
 Now both of the secrets should be present in the overview. Make not of how you named both of these.
 
-.. image:: images/github_dockerhub_automation/note_both_tokens.png
-   :alt: copy_token
+.. image:: images/github_dockerhub_automation/note_both_secrets.png
+   :alt: note_both_secrets
    :width: 80%
 
 .. _add_github_action:

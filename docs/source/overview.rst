@@ -5,7 +5,7 @@ Overview
 GitHub teams and repositories
 -----------------------------
 
-Code in our group is organized via GitHub. Projects are organized in repositories and teams. Generally, a project will have a team assigned to it, with a single repositor that is named the same as the team. Users are then made members of that team, so that they can make edits on that repository.
+Code in our group is organized via GitHub. Projects are organized in repositories and teams. Generally, a project will have a team assigned to it, with a single repository that is named the same as the team. Users are then made members of that team, so that they can make edits on that repository.
 
 Sometimes projects contain multiple work packages or projects, or a project is too big to put into a singular github repository. In these cases the single-repo-single-team principle still holds true. The way this is managed, is by making subteams inside parent teams.
 

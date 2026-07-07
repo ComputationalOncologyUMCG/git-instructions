@@ -14,4 +14,4 @@ Check out the :doc:`prerequisites` section for making sure the you have the requ
    overview
    teams_and_repos_for_admins
    gitlab_linking_for_admins
-
+   github_dockerhub_automation

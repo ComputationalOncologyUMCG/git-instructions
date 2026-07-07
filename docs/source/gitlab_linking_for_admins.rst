@@ -38,7 +38,7 @@ Next go to 'Settings', 'Access tokens'
 
 .. image:: images/gitlab_linking_for_admins/select_access_tokens.png
    :alt: select_access_tokens
-   :width: 80%
+   :width: 50%
 
 Then 'Add new token'
 
@@ -92,7 +92,7 @@ Then we'll goto 'Secrets and variables', then 'Actions'
 We will add the username and token as secrets. This way they can be used for authentication, without other people being able to see their actual contents. 
 Click 'New repository secret'
 
-.. image:: images/gitlab_linking_for_admins/click_new_secret.png
+.. image:: images/github_dockerhub_automation/click_new_secret.png
    :alt: click_new_secret
    :width: 80%
 

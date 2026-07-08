@@ -182,7 +182,7 @@ Now, we'll add the GitHub token as a secret. we wll name this the same as we nam
    :alt: view_clone_secret
    :width: 80%
 
-Now you'll see the three secrets we need
+Now you'll see the three secrets we need (ignore the fact I named the token incorrectly)
 
 .. image:: images/gitlab_linking_for_admins/see_all_secrets.png
    :alt: see_all_secrets
@@ -210,14 +210,14 @@ Specifically we need a YAML in the .github/workflows/ folder. The YAML file crea
             steps:
             - name: Authenticate GitHub
                 run: |
-                git config --global url."https://${{ secrets.GH_GITINSTRUCTIONS_FORWARD_PAT_T1 }}:@github.com/".insteadOf "https://github.com/"
+                git config --global url."https://${{ secrets.GH_GITINSTRUCTIONS_FORWARD_PAT_T2 }}:@github.com/".insteadOf "https://github.com/"
 
             - name: Mirror repository
                 run: |
                 git clone --mirror https://github.com/${{ github.repository }}.git repo.git
                 cd repo.git
 
-                git push --mirror https://${{ secrets.GH_GITINSTRUCTIONS_FORWARD_USER }}:${{ secrets.GH_ICADEPMAP_FORWARD_TOKEN_T1 }}@gitlab.com/ComputationalOncologyUMCG/git-instructions.git
+                git push --mirror https://${{ secrets.GH_GITINSTRUCTIONS_FORWARD_USER }}:${{ secrets.GH_GITINSTRUCTIONS_FORWARD_TOKEN_T2 }}@gitlab.com/ComputationalOncologyUMCG/git-instructions.git
 
 There are a couple of import things.
 

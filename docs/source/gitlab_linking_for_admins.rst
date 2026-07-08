@@ -114,5 +114,76 @@ Next, we'll need to add a secret for the token we generated before. Use the same
    :alt: add_gl_token
    :width: 80%
 
+When pushing to GitLab, the GitHub environment does not have your credentials on hand. We thus have to add GitHub token to be able to clone from github before we do the push.
 
-TO BE CONTINUED
+For generating a PAT, first go to your profile by clicking on it in the top-right, then click on Settings
+
+.. image:: images/github_via_sourcetree/go_to_profile_settings.png
+   :alt: go_to_profile_settings
+   :width: 80%
+
+Then, scroll all the way down on the left, to 'developer settings'
+
+.. image:: images/github_via_sourcetree/to_developer_settings.png
+   :alt: to_developer_settings
+   :width: 80%
+
+Next, go to 'personal access tokens' and 'Tokens (classic)'
+
+.. image:: images/github_via_sourcetree/to_personal_access_tokens.png
+   :alt: to_personal_access_tokens
+   :width: 80%
+
+Generate a new classic token
+
+.. image:: images/github_via_sourcetree/generate_classic_token.png
+   :alt: to_personal_access_tokens
+   :width: 80%
+
+Enter the information for the token. Again, let's use a structured name such as GH\_\[applicationname]_FORWARD_PAT_T[nttoken]. In this example that would be GH_GITINSTRUCTIONS_FORWARD_PAT_T1. This allows you to keep better track of them.
+The expiration also depends on you, but three months is recommended, as this is a good balance of security while not having to create a new one too often.
+The minimal permissions you need to give, is the 'repo' one. Finally click 'Generate token' at the bottom.
+
+.. image:: images/github_via_sourcetree/setup_classic_token.png
+   :alt: setup_classic_token
+   :width: 80%
+
+You will then be shown the new token (don't worry, this example has already been deleted). Github however, will only show the token now, so do not close this tab until you have copied over the PAT.
+
+.. image:: images/github_via_sourcetree/token_success.png
+   :alt: token_success
+   :width: 80%
+
+Either temporarily copy the token somewhere, or open a new tab so you don't lose the token. 
+
+We will now add this token as a secret using the same way we added the secrets.
+
+Now go back to GitHub, and go to the github repository you are trying to manage on GitLab. There, go to 'Settings':
+
+.. image:: images/gitlab_linking_for_admins/go_to_gh_settings.png
+   :alt: get_username
+   :width: 80%
+
+Then we'll goto 'Secrets and variables', then 'Actions'
+
+.. image:: images/github_dockerhub_automation/to_secrets.png
+   :alt: to_secrets
+   :width: 80%
+
+Click 'New repository secret'
+
+.. image:: images/github_dockerhub_automation/click_new_secret.png
+   :alt: click_new_secret
+   :width: 80%
+
+Now, we'll add the GitHub token as a secret. we wll name this the same as we named the token.
+
+.. image:: images/gitlab_linking_for_admins/view_clone_secret.png
+   :alt: view_clone_secret
+   :width: 80%
+
+Now you'll see the three secrets we need
+
+.. image:: images/gitlab_linking_for_admins/see_all_secrets.png
+   :alt: see_all_secrets
+   :width: 80%

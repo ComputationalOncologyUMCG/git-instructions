@@ -187,3 +187,57 @@ Now you'll see the three secrets we need
 .. image:: images/gitlab_linking_for_admins/see_all_secrets.png
    :alt: see_all_secrets
    :width: 80%
+
+.. _add_gitlab_secrets:
+Step 3: Create push action
+--------------------------
+
+Finally, we need to create an action for GitHub so that it knows that we want to perform a build and push. To do this, we need to create a YAML file in a specific directory of our repository.
+
+Specifically we need a YAML in the .github/workflows/ folder. The YAML file created should then also have a descriptive name. For this project the file for example is .github/workflows/mirror-to-gitlab.yml
+
+.. code-block:: yaml
+
+    name: Mirror to GitLab
+
+    on:
+        push:
+
+    jobs:
+        mirror:
+            runs-on: ubuntu-latest
+
+            steps:
+            - name: Authenticate GitHub
+                run: |
+                git config --global url."https://${{ secrets.GH_GITINSTRUCTIONS_FORWARD_PAT_T1 }}:@github.com/".insteadOf "https://github.com/"
+
+            - name: Mirror repository
+                run: |
+                git clone --mirror https://github.com/${{ github.repository }}.git repo.git
+                cd repo.git
+
+                git push --mirror https://${{ secrets.GH_GITINSTRUCTIONS_FORWARD_USER }}:${{ secrets.GH_ICADEPMAP_FORWARD_TOKEN_T1 }}@gitlab.com/ComputationalOncologyUMCG/git-instructions.git
+
+There are a couple of import things.
+
+- you need to put in the secret name of the PAT
+- you need to put in the secret name of the GitLab user that will forward
+- you need to put in the secret name of the GitLab token
+- you need to point to the right repository in the last line!
+
+This action will mirror whenever there is a push on any branch.
+
+After you have pushed a change, you can go to the action tab of the repository, and see the action that was run:
+
+.. image:: images/gitlab_linking_for_admins/see_action.png
+   :alt: see_action
+   :width: 80%
+
+If there was a error, you can click on it to see why (maybe you specified one of the secrets incorrectly for example)
+
+When you now go back to GitLab, you should see that it is a mirror of the GitHub code now
+
+.. image:: images/gitlab_linking_for_admins/see_gl_result.png
+   :alt: see_gl_result
+   :width: 80%

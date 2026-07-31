@@ -182,7 +182,7 @@ Now, we'll add the GitHub token as a secret. we wll name this the same as we nam
    :alt: view_clone_secret
    :width: 80%
 
-Now you'll see the three secrets we need (ignore the fact I named the token incorrectly)
+Now you'll see the three secrets we need
 
 .. image:: images/gitlab_linking_for_admins/see_all_secrets.png
    :alt: see_all_secrets
